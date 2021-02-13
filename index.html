@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinnAsset</title>
+</head>
+<body>
+    <header class="form--header">
+         <div class="form--header--id">
+            <p>ID-Агента:<br><span>23455676</span></p>
+         </div>
+         <nav class="form--header--nav">
+             <ul>
+                 <li><a href="#">Связаться с оператором</a></li>
+                 <li><a href="#">Сформировать QR-код агента</a></li>
+             </ul>
+         </nav>
+        <div class="form--header--btn">
+            <a href="#"><img src="img/1.png" width="11" height="11" alt="vector"> Выйти</a>
+        </div> 
+    </header>
+    <main class="form--main">
+        <form action="#" class="form--main--data">
+            <h2>Данные заемщика</h2>
+            <fieldset>
+                <legend>ФИО</legend>
+                <input type="text" placeholder="Иванов Петр Сергеевич" id="fullname">
+            </fieldset>
+            <fieldset>        
+                <legend>Дата рождения</legend>
+                <input type="date" value="1990-01-01" id="birthday">
+            </fieldset>
+            <fieldset class="active">
+                <legend>Серия и номер паспорта</legend>
+                <input type="number" placeholder="12 23 456789" id="document" pattern="[0-9]{5,10}">
+            </fieldset>
+            <fieldset>     
+                <legend>Место рождения</legend>
+                <input type="text" placeholder="Москва" id="city">
+            </fieldset>
+            <fieldset>    
+                <legend>Кем выдан паспорт</legend>
+                <input type="text" placeholder="УФМС России" id="podr">
+            </fieldset>
+            <fieldset>     
+                <legend>Дата выдачи</legend>
+                <input type="date" value="1990-01-01" id="date">
+            </fieldset>
+            <fieldset>    
+                <legend>Код подразделения</legend>
+                <input type="number" placeholder="324 324" id="kod" pattern="[0-9]{6}">
+            </fieldset>
+            <fieldset>     
+                <legend>Адрес постоянной регистрации</legend>
+                <input type="text" placeholder="Москва, ул. Победы, д. 15" id="adress">
+            </fieldset>
+            <fieldset>
+                <legend>Адрес фактического проживания</legend>
+                <input type="text" placeholder="Москва, ул. Победы, д. 15" id="street">
+            </fieldset>
+            
+            
+            <label for="anketa">
+            <input type="checkbox" id="anketa"> Анкетные данные не соответствуют предоставленным документам и<br> данным авто
+           </label>
+        </form>
+        <form action="#" class="form--main--verify">
+            <h2>Верификация номера заемщика</h2>
+            <fieldset>
+            <legend>Номер телефона заемщика</legend>
+            <input type="tel" placeholder="+7 999 555 48 32" id="tel">
+            </fieldset>
+            <input type="submit" value="Выслать код подтверждения" id="sub">
+        </form>
+        </main>
+        <footer class="form--footer">
+        <div class="form--button">
+            <button>Далее</button>
+        </div>
+       </footer>       
+</body>
+</html>
